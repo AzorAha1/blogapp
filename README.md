@@ -1,0 +1,1 @@
+this is a blog app built using flask
