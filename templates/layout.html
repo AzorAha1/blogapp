@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/nav.css">
+    {% if title %}
+        <title>Blog app - {{ title }}</title>
+    {% else %}
+        <title>Blog app</title>
+    {% endif %}
+    <nav class="nav">
+
+        <a href="#" class="navbar-brand">Blog App</a>
+        <div class="navbar-nav">
+            <a href="/about" class="nav-item">About</a>
+            <a href="/signout" class="nav-item">Sign Out</a>
+        </div>
+    </nav>
+</head>
+<body>
+   {% block content %}
+   {% endblock %}
+</body>
+</html>

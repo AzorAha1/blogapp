@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {% for content in contents %}
+        <h1>{{ content.title }}</h1>
+        <p>opening crawl: {{ content.opening_crawl }}</p>
+        <footer>released on: {{ content.release_date }}</footer>
+    {% endfor %}
+{% endblock %}
