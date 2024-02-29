@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/nav.css">
@@ -9,15 +10,22 @@
     {% else %}
         <title>Blog app</title>
     {% endif %}
-    <nav class="nav">
-
-        <a href="#" class="navbar-brand">Blog App</a>
-        <div class="navbar-nav">
-            <a href="/about" class="nav-item">About</a>
-            <a href="/signout" class="nav-item">Sign Out</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="nav">
+            <a href="#" class="navbar-brand">Star-Wars Blog App</a>
+            <div class="navbar-info">
+                <a href="/home" class="nav-item">Home</a>
+                <a href="/about" class="nav-item">About</a>
+            </div>
+            <div class="navbar-reg">
+                <a href="/SignIn" class="nav-item">SignIn</a>
+                <a href="/Register" class="nav-item">Register</a>
+            </div>
+        </nav>
+    </header>
+    
 </head>
+
 <body>
    {% block content %}
    {% endblock %}
