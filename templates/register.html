@@ -1,7 +1,24 @@
 {% extends 'layout.html'%}
 {% block content %}
-   {{ form.hidden_tag() }}
-   <form action="POST">
-   </form>
+  <div class="content-section">
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            {{ form.username.label }}<br>
+            {{ form.username}}<br>
+            {{ form.email.label }}<br>
+            {{ form.email(class="form-control") }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password }}<br>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password}}<br>
+            <br>{{ form.submit }}
+            <legend>Register</legend>
+            <small> do you already have an account ?
+                <a href="/login">Login</a>
+            </small>
+        </fieldset>
+    </form>
+  </div>
 
 {% endblock %}

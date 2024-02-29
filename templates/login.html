@@ -1,4 +1,16 @@
 {% extends 'layout.html'%}
 {% block content%}
-    <h1>login page</h1>
+<div class="content-section">
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            {{ form.email.label }}<br>
+            {{ form.email}}<br>
+            {{ form.password.label }}<br>
+            {{ form.password }}<br>
+            <br>{{ form.login }}
+            <legend>Sign in</legend>
+        </fieldset>
+    </form>
+  </div>
 {% endblock %}
